@@ -1,0 +1,15 @@
+redisMaster:
+  port: 6379
+  targetPort: 6379
+  containerPort: 6379
+  replicaCount: 1
+
+redisReplica:
+  port: 6379
+  containerPort: 6379
+  replicaCount: 2
+
+frontend:
+  port: 80
+  containerPort: 80
+  replicaCount: 3
